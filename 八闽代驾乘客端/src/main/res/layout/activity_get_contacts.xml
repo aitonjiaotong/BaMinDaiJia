@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bamin.com.bamindaijia.Activity.GetContactsActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/banTouMing">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:id="@+id/textView_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="取消"
+                android:textSize="@dimen/normalTextSize"
+                />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:id="@+id/textView_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="确认"
+                android:textColor="@color/basic_color"
+                android:textSize="@dimen/normalTextSize"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/editText_constacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:hint="请输入联系人电话"
+                android:textSize="@dimen/normalEditTextSize"/>
+
+            <ImageView
+                android:id="@+id/imageView_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/contacts"
+                />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/text_gray"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:src="@mipmap/dgp_title_bar_btn_cancle"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView_cancleInput"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageView_contacts"
+                android:layout_toStartOf="@+id/imageView_contacts"
+                android:layout_marginRight="15dp"
+                />
+        </RelativeLayout>
+
+        <GridView
+            android:verticalSpacing="5dp"
+            android:id="@+id/gridView_contants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:numColumns="3"/>
+
+    </LinearLayout>
+</RelativeLayout>

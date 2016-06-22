@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bamin.com.bamindaijia.Activity.ChosseSite">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Hight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:textSize="@dimen/normalTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="厦门"
+            android:id="@+id/textView_city"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:src="@mipmap/dgp_route_details_icon_unfold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView_city"
+            android:layout_toEndOf="@+id/textView_city"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:background="@color/gray_white"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="15dp"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:textColor="@color/basic_color"
+            android:textSize="@dimen/normalTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:id="@+id/textView_cancle"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <EditText
+            android:textColorHint="@color/text_gray"
+            android:layout_marginLeft="5dp"
+            android:hint="你从哪里出发"
+            android:textSize="@dimen/normalEditTextSize"
+            android:background="@null"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_where"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"/>
+    </RelativeLayout>
+
+    <TextView
+        android:background="@color/gray_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_site"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView4"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_search"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView4"/>
+
+</RelativeLayout>

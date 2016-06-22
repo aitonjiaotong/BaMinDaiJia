@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaMinDaiJia.iml" filepath="$PROJECT_DIR$/BaMinDaiJia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CheckBox/CheckBox.iml" filepath="$PROJECT_DIR$/CheckBox/CheckBox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_shane/lib_shane.iml" filepath="$PROJECT_DIR$/lib_shane/lib_shane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/八闽代驾乘客端/八闽代驾乘客端.iml" filepath="$PROJECT_DIR$/八闽代驾乘客端/八闽代驾乘客端.iml" />
+    </modules>
+  </component>
+</project>
