@@ -24,7 +24,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <!-- 读取联系人 -->
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
-
     <application
         android:name=".application.App"
         android:allowBackup="true"
@@ -35,7 +34,8 @@
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="6f9cd935d1e612b314573016106df404"/>
-
+        <meta-data android:value="5769f6a067e58e1850001256" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="ZiDongShengJi" android:name="UMENG_CHANNEL"/>
         <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
